@@ -1,0 +1,16 @@
+body {
+  background-color: #fee5ac;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+}
+
+img{
+    border-radius: 10px;
+}
+
+
+

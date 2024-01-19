@@ -45,3 +45,8 @@
             cursor: pointer;
             border-radius: 8px;
         }
+
+        /*Clase audios*/
+        audio {
+            background-color: black;
+        }
