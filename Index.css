@@ -1,52 +1,196 @@
-  body {
-            background-color: #FEE5AC;
-            font-family: Arial, sans-serif;
-        }
-        
-        .container {
-            text-align: center;
-            padding: 50px;
-                
-        }
-        
-        h1 {
-            color: #8B4513;
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        
-        p {
-            color: #8B4513;
-            font-size: 24px;
-        }
-        
-        img {
-            width: 300px;
-            height: auto;
-            margin-top: 50px;
-        }
+    @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Spicy+Rice&display=swap");
 
-        /*Clase para el boton*/
+    body {
+    background: url(/img/provisional34.jpg) center center fixed;
+    font-family: "Luckiest Guy", cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    }
 
-        a{
-            text-decoration: none;
-            width: 200px;
-            height: 50px;
-        }
+    .container {
+    text-align: center;
+    padding: 50px;
+    }
 
-    .btn {
-            background-color: #8B4513;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 8px;
-        }
+    .libro {
+    width: 100vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAD2;   
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    }
 
-        /*Clase audios*/
-        audio {
-            background-color: black;
-        }
+    h1 {
+    color: #8b4513;
+    font-size: 48px;
+    margin-bottom: 20px;
+    }
+
+    p {
+    color: #8b4513;
+    font-size: 24px;
+    }
+
+    img {
+    width: 300px;
+    height: auto;
+    margin-top: 50px;
+    }
+
+    /*Clase para el boton*/
+
+    a {
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    }
+
+    .wrapper {
+    text-align: center;
+    align-items: inherit;
+    }
+    button {
+    width: 200px;
+    height: 70px;
+    background: #8b4513;
+    border-style: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-family: "Lato";
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+    }
+    button span {
+    position: absolute;
+    display: block;
+    }
+    button span:nth-child(1) {
+    height: 3px;
+    width: 200px;
+    top: 0px;
+    left: -200px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #f6e58d);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    animation: span1 2s infinite;
+    animation-delay: 1s;
+    }
+
+    @keyframes span1 {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 200px;
+    }
+    }
+    button span:nth-child(2) {
+    height: 70px;
+    width: 3px;
+    top: -70px;
+    right: 0px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #f6e58d);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+    }
+    @keyframes span2 {
+    0% {
+        top: -70px;
+    }
+    100% {
+        top: 70px;
+    }
+    }
+    button span:nth-child(3) {
+    height: 3px;
+    width: 200px;
+    right: -200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), #f6e58d);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+    }
+    @keyframes span3 {
+    0% {
+        right: -200px;
+    }
+    100% {
+        right: 200px;
+    }
+    }
+
+    button span:nth-child(4) {
+    height: 70px;
+    width: 3px;
+    bottom: -70px;
+    left: 0px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+    }
+    @keyframes span4 {
+    0% {
+        bottom: -70px;
+    }
+    100% {
+        bottom: 70px;
+    }
+    }
+
+    /* button:hover {
+    transition: all 0.5s;
+    transform: translateX(10px) scale(1.1); 
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    button:active {
+    transform: scale(0.9);
+    }
+
+    button:not(:hover):not(:active) {
+    animation: bounceButton 1.5s infinite;
+    }
+
+    @keyframes bounceButton {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+    } */
+
+    /*Clase audios*/
+    audio {
+    background-color: black;
+    }

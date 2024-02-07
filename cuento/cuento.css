@@ -1,16 +1,61 @@
 body {
-  background-color: #fee5ac;
-  font-family: Arial, sans-serif;
+    background: url(/img/provisional34.jpg) center center fixed;
+    font-family: "Luckiest Guy", cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
+
+.libro {
+  width: 100vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAD2;   
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    }
+
+.wrapper {
+    text-align: center;
+    align-items: inherit;
+}   
 
 .container {
-  text-align: center;
-  padding: 50px;
+    text-align: center;
+    padding: 303px;
 }
 
-img{
+img {
     border-radius: 10px;
+    max-width: 100%;
 }
 
+.boton {
+    background-color: #00ff00;
+    border: 2px black solid;
+    border-radius: 30px;
 
+}
+
+a .botonhome{
+  background-color: #00ff00;
+    border: 2px black solid;
+    border-radius: 9px;
+    height: 40px;
+    width: 40px;
+
+}
+
+#aa img{
+    max-width: 100%;
+    height: 40px;
+
+
+}
 
