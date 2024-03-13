@@ -1,0 +1,56 @@
+
+
+/* Estilos para el juego de memoria */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f3f3f3;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.memory-game {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 90vw;
+  height: 90vh;
+  margin: 5vh auto;
+}
+
+.memory-card {
+  width: 160px;
+  height: 220px;
+  position: relative; /* Añadido para asegurar que las caras estén posicionadas correctamente */
+  perspective: 1000px; /* Añadido para crear un efecto de perspectiva en la transformación */
+}
+
+.memory-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.front-face,
+.back-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg); /* Inicialmente oculta la cara delantera */
+}
+
+.flip .front-face {
+  transform: rotateY(0deg); /* Mostrar la cara delantera al hacer clic */
+}
+
+.match {
+  opacity: 0;
+  transform: scale(1.1);
+}

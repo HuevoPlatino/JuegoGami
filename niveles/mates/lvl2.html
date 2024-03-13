@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de Clasificación de Castañas</title>
+    <link rel="stylesheet" href="lvl-2.css" />
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Juego de Clasificación de Castañas</h1>
+        <div class="castanas-container">
+            <div class="castana" draggable="true" data-type="small"></div>
+            <div class="castana" draggable="true" data-type="small"></div>
+            <div class="castana" draggable="true" data-type="small"></div>
+            <div class="castana" draggable="true" data-type="small"></div>
+            <div class="castana" draggable="true" data-type="small"></div>
+            <div class="castana" draggable="true" data-type="medium"></div>
+            <div class="castana" draggable="true" data-type="medium"></div>
+            <div class="castana" draggable="true" data-type="medium"></div>
+            <div class="castana" draggable="true" data-type="medium"></div>
+            <div class="castana" draggable="true" data-type="medium"></div>
+            <div class="castana" draggable="true" data-type="large"></div>
+            <div class="castana" draggable="true" data-type="large"></div>
+            <div class="castana" draggable="true" data-type="large"></div>
+            <div class="castana" draggable="true" data-type="large"></div>
+            <div class="castana" draggable="true" data-type="large"></div>
+        </div>
+        <div class="cestas-container">
+            <div class="cesta small" droppable="true" data-type="small">
+                <div class="cesta-content">
+                    <p class="cesta-label">Castañas Pequeñas</p>
+                </div>
+            </div>
+            <div class="cesta medium" droppable="true" data-type="medium">
+                <div class="cesta-content">
+                    <p class="cesta-label">Castañas Medianas</p>
+                </div>
+            </div>
+            <div class="cesta large" droppable="true" data-type="large">
+                <div class="cesta-content">
+                    <p class="cesta-label">Castañas Grandes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="acertijo" class="hidden" style="position: absolute; top: 80px; left: 50px">
+        <p id="acertijo-text"></p>
+        <input type="number" id="respuesta-input" />
+        <button id="verificar-btn">Verificar</button>
+        <p id="resultado" class="resultado"></p>
+    </div>
+    <script src="lvl-2.js"></script>
+</body>
+
+</html>

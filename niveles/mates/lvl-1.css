@@ -1,0 +1,22 @@
+#game {
+    position: relative;
+}
+
+#tree {
+    position: relative;
+    z-index: 1; /* Asegurar que el árbol esté por encima de las castañas */
+}
+
+.falling {
+    animation: fall 2s linear;
+}
+
+.chestnut {
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+@keyframes fall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(600px); }
+}

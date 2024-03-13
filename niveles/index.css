@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.image {
+    margin-bottom: 20px;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.word {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: move;
+}
+
+#checkButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#checkButton:hover {
+    background-color: #0056b3;
+}

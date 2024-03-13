@@ -40,9 +40,8 @@
     }
 
     img {
-    width: 300px;
+    width: 260px;
     height: auto;
-    margin-top: 50px;
     }
 
     /*Clase para el boton*/
@@ -194,3 +193,70 @@
     audio {
     background-color: black;
     }
+/*classes para escoger el nivel*/
+    .options {
+    display: flex;
+    flex-direction: column;
+    
+    }
+    label {
+    margin-bottom: 10px;
+    }
+    input[type="radio"] {
+    margin-right: 5px;
+    }
+    input[type="radio"]:checked + label {
+    font-weight: bold;
+    }
+    .option-image {
+    display: block;
+    width: 100px; /* Ajusta este valor para cambiar el tamaño de las imágenes */
+    height: 100px; /* Ajusta este valor para cambiar el tamaño de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes mantengan su aspecto al cambiar de tamaño */
+    margin: 0 auto; /* Centra las imágenes */
+    }
+    .option-button {
+    display: block;
+    width: 100%; /* Asegura que los botones llenen el ancho de su contenedor */
+    }
+    .row{
+    text-align: center;
+    }
+    .option-image {
+    display: block;
+    width: 100px; /* Ajusta este valor para cambiar el tamaño de las imágenes */
+    height: 100px; /* Ajusta este valor para cambiar el tamaño de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes mantengan su aspecto al cambiar de tamaño */
+    margin: 0 auto; /* Centra las imágenes */
+    }
+    .option-button {
+    display: block;
+    width: 100%; /* Asegura que los botones llenen el ancho de su contenedor */
+    }
+    .row{
+    text-align: center;
+    }
+    .option-image {
+    display: block;
+    width: 100px; /* Ajusta este valor para cambiar el tamaño de las imágenes */
+    height: 100px; /* Ajusta este valor para cambiar el tamaño de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes mantengan su aspecto al cambiar de tamaño */
+    margin: 0 auto; /* Centra las imágenes */
+    }
+    .option-button {
+    display: block;
+    width: 100%; /* Asegura que los botones llenen el ancho de su contenedor */
+    }
+    .row{
+    text-align: center;
+    }
+    .option-image {
+    display: block;
+    width: 300px; /* Ajusta este valor para cambiar el tamaño de las imágenes */
+    height: 300px; /* Ajusta este valor para cambiar el tamaño de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes mantengan su aspecto al cambiar de tamaño */
+    margin: 0 auto; /* Centra las imágenes */
+    }
+ .container{
+    background-color: #FAFAD2;
+ }
